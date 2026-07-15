@@ -79,14 +79,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CodeCamp Academy — Free Interactive Coding Courses" },
-      { name: "description", content: "Learn programming for free with hands-on coding lessons, quizzes, and real-world projects. HTML, CSS, JavaScript, Python, React, and more." },
-      { name: "author", content: "CodeCamp Academy" },
-      { property: "og:title", content: "CodeCamp Academy — Free Interactive Coding Courses" },
+      { title: "VeriCodeCamp — Free Interactive Coding Courses" },
+      { name: "description", content: "Learn programming for free with hands-on coding lessons, quizzes, and real-world projects. HTML, CSS, JavaScript, Python, C, React, and more." },
+      { name: "author", content: "VeriCodeCamp" },
+      { property: "og:title", content: "VeriCodeCamp — Free Interactive Coding Courses" },
       { property: "og:description", content: "Learn programming for free with hands-on coding lessons, quizzes, and real-world projects." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@CodeCampAcademy" },
+      { name: "twitter:site", content: "@VeriCodeCamp" },
     ],
     links: [
       {

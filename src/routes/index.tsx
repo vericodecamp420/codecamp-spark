@@ -3,15 +3,16 @@ import { ArrowRight, CheckCircle, Code2, Layers, Trophy, Users } from "lucide-re
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CourseCard } from "@/components/course-card";
+import { Announcements } from "@/components/announcements";
 import { courses } from "@/lib/courses-data";
 import { useProgress } from "@/hooks/use-progress";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CodeCamp Academy — Free Interactive Coding Courses" },
+      { title: "VeriCodeCamp — Free Interactive Coding Courses" },
       { name: "description", content: "Learn programming for free with hands-on coding lessons, quizzes, and real-world projects." },
-      { property: "og:title", content: "CodeCamp Academy — Free Interactive Coding Courses" },
+      { property: "og:title", content: "VeriCodeCamp — Free Interactive Coding Courses" },
       { property: "og:description", content: "Learn programming for free with hands-on coding lessons, quizzes, and real-world projects." },
     ],
   }),
@@ -76,7 +77,7 @@ function HomePage() {
                   <code>{`<!DOCTYPE html>
 <html lang="en">
   <body>
-    <h1>Hello, CodeCamp!</h1>
+    <h1>Hello, VeriCodeCamp!</h1>
     <p>Start your journey today.</p>
   </body>
 </html>`}</code>
@@ -106,6 +107,8 @@ function HomePage() {
           ))}
         </div>
       </section>
+
+      <Announcements />
 
       <section className="border-t bg-muted/30">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

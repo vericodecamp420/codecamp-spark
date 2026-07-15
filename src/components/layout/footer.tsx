@@ -10,7 +10,7 @@ export function Footer() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Code2 className="h-5 w-5" />
               </div>
-              <span className="text-lg tracking-tight">CodeCamp Academy</span>
+              <span className="text-lg tracking-tight">VeriCodeCamp</span>
             </div>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
               Free, interactive coding education for beginners and aspiring developers. Learn by building real projects.
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} CodeCamp Academy. Free for everyone.
+          © {new Date().getFullYear()} VeriCodeCamp. Free for everyone.
         </div>
       </div>
     </footer>

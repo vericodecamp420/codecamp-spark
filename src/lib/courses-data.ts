@@ -457,6 +457,125 @@ export const courses: Course[] = [
       },
     ],
   },
+  {
+    id: "c-programming",
+    title: "C Programming",
+    slug: "c-programming",
+    description: "Learn the fundamentals of C — variables, control flow, functions, and pointers.",
+    longDescription:
+      "C is the foundation of modern programming languages. This course walks you through variables, data types, control flow, functions, arrays, and an introduction to pointers. You'll build small command-line programs to solidify each concept.",
+    level: "Beginner",
+    category: "Programming",
+    color: "oklch(0.6 0.15 260)",
+    icon: "Binary",
+    totalLessons: 6,
+    estimatedHours: 12,
+    tags: ["C", "Pointers", "Systems"],
+    lessons: [
+      {
+        id: "c-intro",
+        title: "Why Learn C?",
+        type: "reading",
+        duration: "15 min",
+        description: "Understand why C is still one of the most influential languages.",
+        content:
+          "C is a general-purpose, compiled programming language created in the early 1970s. It powers operating systems, embedded devices, and performance-critical software. Learning C gives you a deep understanding of how memory, pointers, and low-level operations work.",
+      },
+      {
+        id: "c-hello",
+        title: "Hello, World in C",
+        type: "code",
+        duration: "20 min",
+        description: "Write your first C program that prints a greeting.",
+        content:
+          "Write a C program that prints `Hello, C!` to the terminal using `printf`. Remember to include `<stdio.h>` and a `main` function that returns 0.",
+        starterCode:
+          "#include <stdio.h>\n\nint main(void) {\n    // print Hello, C! below\n    return 0;\n}\n",
+        expectedOutput: "Hello, C!",
+        hints: [
+          "Use printf(\"...\\n\"); to print text.",
+          "Don't forget the semicolon at the end of each statement.",
+        ],
+      },
+      {
+        id: "c-variables",
+        title: "Variables & Data Types",
+        type: "reading",
+        duration: "20 min",
+        description: "Learn about int, float, char, and how memory is used in C.",
+        content:
+          "C is a statically typed language: every variable must have a declared type. Common types are `int` (whole numbers), `float`/`double` (decimals), and `char` (single characters). The compiler reserves memory based on the type.",
+      },
+      {
+        id: "c-loops",
+        title: "Loops & Conditions",
+        type: "code",
+        duration: "25 min",
+        description: "Use a for-loop to sum the numbers 1 to 5.",
+        content:
+          "Write a C program that uses a `for` loop to compute the sum of numbers from 1 to 5, then prints `Sum = 15`.",
+        starterCode:
+          "#include <stdio.h>\n\nint main(void) {\n    int sum = 0;\n    // add a for loop here\n\n    printf(\"Sum = %d\\n\", sum);\n    return 0;\n}\n",
+        expectedOutput: "Sum = 15",
+        hints: [
+          "Use for (int i = 1; i <= 5; i++) { sum += i; }",
+          "Use %d in printf to print an integer.",
+        ],
+      },
+      {
+        id: "c-functions",
+        title: "Functions in C",
+        type: "code",
+        duration: "25 min",
+        description: "Define a function that squares a number.",
+        content:
+          "Define a function `int square(int n)` that returns `n * n`. Call it with 4 and print `Square = 16`.",
+        starterCode:
+          "#include <stdio.h>\n\n// define square below\n\nint main(void) {\n    // call square and print the result\n    return 0;\n}\n",
+        expectedOutput: "Square = 16",
+        hints: [
+          "A function has a return type, name, and parameter list.",
+          "Use printf(\"Square = %d\\n\", square(4));",
+        ],
+      },
+      {
+        id: "c-quiz",
+        title: "C Fundamentals Quiz",
+        type: "quiz",
+        duration: "10 min",
+        description: "Review C syntax, types, and pointers basics.",
+        content: "Answer the questions below.",
+        questions: [
+          {
+            id: "q1",
+            question: "Which header do you include for printf and scanf?",
+            options: ["<stdlib.h>", "<stdio.h>", "<string.h>", "<math.h>"],
+            correctIndex: 1,
+            explanation: "`<stdio.h>` provides standard input/output functions like printf and scanf.",
+          },
+          {
+            id: "q2",
+            question: "What does the `&` operator do when used with a variable?",
+            options: [
+              "Multiplies two values",
+              "Returns the address of the variable",
+              "Compares two values",
+              "Dereferences a pointer",
+            ],
+            correctIndex: 1,
+            explanation: "`&x` returns the memory address of `x`, commonly used with scanf and pointers.",
+          },
+          {
+            id: "q3",
+            question: "Which format specifier prints an integer in printf?",
+            options: ["%s", "%f", "%d", "%c"],
+            correctIndex: 2,
+            explanation: "`%d` prints a signed integer; `%f` is for floats, `%s` for strings, `%c` for chars.",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getCourseById(id: string): Course | undefined {
